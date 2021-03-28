@@ -1,0 +1,293 @@
+/* GROUP 1 */
+.g1{
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #939597;
+    height: 775px;
+}
+
+
+.p1-short,.p1-long{
+    color: white;
+}
+
+.p1-short{
+    letter-spacing: 2pt;
+    font-size: 200%;
+    border-bottom: 1px solid white;
+    width: 50%;
+}
+
+h1{
+    color: white;
+    font-size: 400%;
+    line-height: 120%;
+    margin-top: 0.226in;
+    margin-bottom: 0.411in;
+}
+.p1-long{
+    letter-spacing: 2pt;
+    font-size: 100%;
+    width: 50%;
+    margin-bottom: 0.6in;
+    
+}
+.text1{
+    position: relative;
+    left: 25%;
+    top: 15%;
+    z-index: 2;
+}
+
+.img1{
+    background-color: #f5df4d;
+    height: 775px;
+    width: 663px;
+    
+    
+    
+
+}
+.rec1{
+    
+        background-color: rgb(245, 223, 77);
+        position: absolute;
+        top: 422px;
+        left: 222px;
+        
+        width: 303px;
+        height: 48px;
+        z-index: 1;
+      
+      
+}
+
+
+.img1_2{
+    position: relative;
+    left: -25%;
+}
+
+
+.button1{
+    text-decoration: none;
+    font-size: 120%;
+    font-weight: 700;
+    
+    color: #939597;
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 40px;
+    display: inline-block;
+
+    text-align: center;
+    transition: all 0.5s;
+    
+}
+.button1:hover,
+.button1:active{
+    color: #f5df4d;
+}
+
+
+/* GROUP 2 */
+.g2{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 300px;
+    
+}
+
+.img2{
+  
+    align-items: center;
+    text-align: center;    
+}
+
+.img202{
+    margin-left: 0.569in;
+}
+.p-short2{
+    font-size: 130%;
+    color: rgb(245, 223, 77);
+    font-weight: 1000;
+    letter-spacing: 20pt;
+
+    margin: 50px auto;
+}
+
+.p-long2{
+    font-size: 70%;
+    letter-spacing: 1pt;
+}
+
+.icon2{
+    font-size: 50pt;
+    margin-right: 35px;
+}
+
+.content-group2{
+    display: flex;
+    flex-direction: row;
+    margin: 80px auto;
+    align-items: center;
+    position: relative;
+ 
+
+    transition: all 0.75s;
+
+    
+}
+
+.h5-2{
+    color: rgb(245, 223, 77);
+    font-size: 130%;
+    letter-spacing: 3px;
+}
+.content-group2:hover{
+    cursor: pointer;
+}
+/* .content-group2:active{
+    background-color: #f0f0f0;
+    padding: 30px;
+} */
+
+
+/* GROUP 3 */
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1600px;
+  position: relative;
+  margin: auto;
+  top: 400px;
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+  
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/* GROUP 4 */
+
+/* FOOTER */
+footer{
+    text-align: center;
+    background-color: #939597;
+    color: black;
+    padding: 20px;
+    margin-top: 500px;
+
+    height: 400px;
+    position: relative;
+}
+
+.firstFooter > h5{
+    color: white;
+    font-weight: 500;
+    letter-spacing: 15px;
+    font-size: 120%;
+    margin-bottom: 40px;
+}
+
+.firstFooter > a{
+    font-size: 70%;
+    font-weight: 800;
+    color: white;
+    background-color: #939597;
+
+    border: 3px solid white;
+    padding: 10px 60px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+
+    transition: all 0.7s;
+}
+
+.secondFooter>ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+
+}
+.secondFooter>li{
+    margin: 400px;
+}
+
+.social-list{
+    padding: 0 25px;
+    
+}
+.secondFooter>ul{
+    margin-top: 50px;
+}
+
+.fab:hover,
+.fab:active{
+    opacity: 50%;
+}
+.fab{
+    transition: all 0.7s;
+    
+}
+
+.firstFooter>a:hover,
+.firstFooter>a:active{
+    background-color: white;
+    color: #939597;
+}

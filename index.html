@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <script src="https://kit.fontawesome.com/3523e46ad0.js" crossorigin="anonymous"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/css.css">
+    
+</head>
+
+
+
+<body>
+
+    <header>
+        <section class="menu">
+            <div class="row login" style="height: 80.4px;" >
+                <div></div>
+                
+                <div class="register-pop-up" id="myRegister">
+                    <form action="" class="register-container">
+                        <h3>Register</h3>
+                        <label for="Username"><strong>Username</strong></label>
+                        <input type="text" name="Username" id="reguser" class="reguser" required>
+
+                        <label for="Password"><strong>Password</strong></label>
+                        <input type="password" name="Password" id="regpass" class="regpass" required>
+                        <p class="reg-message"></p>
+                        <button class="register-btn reg-submit" id="reg-submit">Register</button>
+                        <input type="button" name=""  class="login-btn" value="Login" onclick="openForm()">
+                    </form>
+                </div>
+                <a href="#" onclick="openForm() " id="login">Login</a>
+                
+                <div class="form-pop-up" id="myForm">
+                    <form action="" class="form-container" >
+                        <h3 >Login</h3>
+                        <label for="username"><strong>Username</strong></label>
+                        <input type="text" placeholder="Your username" name="username" class="txtuser" required>
+
+                        <label for="password"><strong>Password</strong></label>
+                        <input type="password" placeholder="Your password" name="password" class="txtpass" required>
+
+                        <p class="message"></p>
+
+                        <button class="login-btn submit">Login</button>
+                        <input type="button" class="close-btn" value="Close" onclick="closeForm()">
+                        <p style="margin: 10px auto" onclick="openRegister()" ><a href="#" class="register">Register</a></p>
+                    </form>
+                </div>
+                
+            </div>
+            <div class="row" style="display: flex;justify-content: space-around;">
+                    <div class="col-auto">
+                        <ul class="menu__social-list">
+                            <li><a href="#"><i class="fab fa-facebook-f" style="font-size: 120%;"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram" style="font-size: 120%;"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p" style="font-size: 120%;"></i></a></li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="col-auto">
+                        
+                            <ul class="menu__links">
+                                <li><a href="#">HOME</a></li>
+                                <li><a href="#">PAGE</a></li>
+                                <li><a href="#">ABOUT</a></li>
+                                <li><a href="#">CONTACT</a></li>
+                            </ul>
+                        
+                    </div>
+                </div>
+            
+        </section>
+    </header>
+
+    <section class="group1-section" >
+        <div class="rec1"></div>
+        <div class="row g1" >             
+            <div class="col-auto" >
+                
+                <div class="text1">
+                    <p class="p1-short">Our Special Trainers</p>
+                    
+                    
+                    <h1>FITNESS <br>TRAINING</h1>
+                    <p class="p1-long">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <a href="#" class="button1">Join us</a>
+                </div>
+               
+                
+
+            </div>
+            <div class="col-auto">
+                <div class="bg1"></div>
+                <div class="img1">
+                    <img src="images/IMG_G101.png" alt="01" class="img1_2">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="group2-section">
+        <div class="row g2">
+            <div class="col-auto">
+                <div class="img2">
+                    
+                        <img src="images/IMG_G201_1.png"   alt="201" id="img-201">
+                        <img src="images/IMG_G201_2.png" alt="202" class="img202" id="img-202">
+                        <p class="p-short2">| FITNESS |</p>
+                    
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="text2">
+                    <div class="content-group2" onclick="changeImg(exc_1)">
+                        <i class="fas fa-dumbbell icon2"></i>
+                        <div  >
+                            <h5 class="h5-2">Excercise 1</h5>
+                            <p class="p-long2">When an unknown printer took a galley of type <br> and scrambled it to make a type specimen book.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="content-group2" onclick="changeImg(exc_2)">
+                        <i class="fas fa-dumbbell icon2"></i>
+                        <div >
+                            <h5 class="h5-2">Excercise 2</h5>
+                            <p class="p-long2">When an unknown printer took a galley of type <br> and scrambled it to make a type specimen book.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="content-group2" onclick="changeImg(exc_3)">
+                        <i class="fas fa-dumbbell icon2"></i>
+                        <div >
+                            <h5 class="h5-2">Excercise 3</h5>
+                            <p class="p-long2">When an unknown printer took a galley of type <br> and scrambled it to make a type specimen book.</p>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="slideshow-container" id="slideshow">
+
+        <a  onclick="plusSlides(-1)"></a>
+        <a  onclick="plusSlides(1)"></a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+        <footer>
+            <div style="margin-top: 90px;"   >
+                <div class="firstFooter">
+                    <h5>LIKE WHAT YOU SEE?</h5>
+                    <a href="#">Get more About me</a>
+                </div>
+                <div class="secondFooter">
+                    <ul class="footer__social-list">
+                        <li class="social-list"><a href="#"><i class="fab fa-facebook-f" style="color: white; font-size: 140%;"></i></a></li>
+                                <li class="social-list"><a href="#"><i class="fab fa-instagram" style="color: white; font-size: 140%;"></i></a></li>
+                                <li class="social-list"><a href="#"><i class="fab fa-pinterest-p" style="color: white; font-size: 140%;"></i></a></li>
+                    </ul>
+    
+                </div>
+            </div>
+           
+        </footer>
+
+
+
+        
+        
+    
+  <script src="js/js.js"></script> 
+</body>
+</html>
